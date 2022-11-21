@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{582B9C61-742D-4D2B-9C72-42C088CE473D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SimpleProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../../MofLibrary/Include;../../../MofLibrary/Include;$(IncludePath);</IncludePath>
+    <LibraryPath>../../MofLibrary/Library;../../../MofLibrary/Library;$(LibraryPath);</LibraryPath>
+    <OutDir>$(SolutionDir)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>../../MofLibrary/Include;../../../MofLibrary/Include;$(IncludePath);</IncludePath>
+    <LibraryPath>../../MofLibrary/Library;../../../MofLibrary/Library;$(LibraryPath);</LibraryPath>
+    <OutDir>$(SolutionDir)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Library\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Library\Library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD;</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>USERNAME=$(USERNAME);</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Library\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Library\Library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>USERNAME=$(USERNAME);</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ArrowAction.cpp" />
+    <ClCompile Include="ArrowEnemyAction.cpp" />
+    <ClCompile Include="AttackEnemy.cpp" />
+    <ClCompile Include="AxeAction.cpp" />
+    <ClCompile Include="AxeEnemyAction.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="BlockManager.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="CardContainer.cpp" />
+    <ClCompile Include="CardDataLoad.cpp" />
+    <ClCompile Include="CardLocater.cpp" />
+    <ClCompile Include="CardManager.cpp" />
+    <ClCompile Include="CardSelect.cpp" />
+    <ClCompile Include="CardStrongBox.cpp" />
+    <ClCompile Include="ContactFile.cpp" />
+    <ClCompile Include="DaggerAction.cpp" />
+    <ClCompile Include="DaggerEnemyAction.cpp" />
+    <ClCompile Include="DrawCard.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyContainer.cpp" />
+    <ClCompile Include="Explanation.cpp" />
+    <ClCompile Include="Field.cpp" />
+    <ClCompile Include="FlowTurn.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameApp.cpp" />
+    <ClCompile Include="GameClear.cpp" />
+    <ClCompile Include="HandInCard.cpp" />
+    <ClCompile Include="IBaseAction.cpp" />
+    <ClCompile Include="IBaseEnemyAction.cpp" />
+    <ClCompile Include="IBaseObject.cpp" />
+    <ClCompile Include="IBaseScene.cpp" />
+    <ClCompile Include="IBaseTurn.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="InvincibleAction.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MarchEnemy.cpp" />
+    <ClCompile Include="PickUp.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RecoveryAction.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SordAction.cpp" />
+    <ClCompile Include="StackCards.cpp" />
+    <ClCompile Include="Stairs.cpp" />
+    <ClCompile Include="SwordEnemyAction.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="Tutorial.cpp" />
+    <ClCompile Include="UseCard.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArrowAction.h" />
+    <ClInclude Include="ArrowEnemyAction.h" />
+    <ClInclude Include="AttackEnemy.h" />
+    <ClInclude Include="AxeAction.h" />
+    <ClInclude Include="AxeEnemyAction.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="BlockManager.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="CardContainer.h" />
+    <ClInclude Include="CardDataLoad.h" />
+    <ClInclude Include="CardLocater.h" />
+    <ClInclude Include="CardManager.h" />
+    <ClInclude Include="CardSelect.h" />
+    <ClInclude Include="CardStrongBox.h" />
+    <ClInclude Include="ContactFile.h" />
+    <ClInclude Include="DaggerAction.h" />
+    <ClInclude Include="DaggerEnemyAction.h" />
+    <ClInclude Include="DrawCard.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyContainer.h" />
+    <ClInclude Include="Explanation.h" />
+    <ClInclude Include="Field.h" />
+    <ClInclude Include="FlowTurn.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameApp.h" />
+    <ClInclude Include="GameClear.h" />
+    <ClInclude Include="HandInCard.h" />
+    <ClInclude Include="IBaseAction.h" />
+    <ClInclude Include="IBaseEnemyAction.h" />
+    <ClInclude Include="IBaseObject.h" />
+    <ClInclude Include="IBaseScene.h" />
+    <ClInclude Include="IBaseTurn.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InvincibleAction.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MarchEnemy.h" />
+    <ClInclude Include="PickUp.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RecoveryAction.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SordAction.h" />
+    <ClInclude Include="StackCards.h" />
+    <ClInclude Include="Stairs.h" />
+    <ClInclude Include="SwordEnemyAction.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="Tutorial.h" />
+    <ClInclude Include="UseCard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Version.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,7 @@
+6
+,sword,6
+,arrow,6
+,axe,4
+,dagger,2
+,recovery,2
+,invincible,2

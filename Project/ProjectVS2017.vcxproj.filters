@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\GameScene">
+      <UniqueIdentifier>{f4ca52ae-6832-4081-ba14-ce816bbd77d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameScene\Action">
+      <UniqueIdentifier>{9258623e-eb23-40b2-bf2c-a92410c56ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameScene\Interface">
+      <UniqueIdentifier>{b75be6dc-c5e2-4ecd-9a95-36685fed9121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameScene\Object">
+      <UniqueIdentifier>{f1ada207-f0ac-495b-afba-a43747ed8f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameScene\EnemyAction">
+      <UniqueIdentifier>{4da03eae-25a3-4a1c-af37-ea05f1141d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Tutorial">
+      <UniqueIdentifier>{99c1462c-3573-4904-8e15-5117403ebc0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowAction.cpp">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="SordAction.cpp">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackEnemy.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CardContainer.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CardLocater.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CardManager.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCard.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyContainer.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="FlowTurn.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="HandInCard.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MarchEnemy.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="StackCards.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="UseCard.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameApp.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="IBaseAction.cpp">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="IBaseObject.cpp">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="IBaseTurn.cpp">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactFile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="IBaseScene.cpp">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="CardSelect.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CardDataLoad.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="RecoveryAction.cpp">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="InvincibleAction.cpp">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="DaggerAction.cpp">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Stairs.cpp">
+      <Filter>ソース ファイル\GameScene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CardStrongBox.cpp">
+      <Filter>ソース ファイル\GameScene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="IBaseEnemyAction.cpp">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="SwordEnemyAction.cpp">
+      <Filter>ソース ファイル\GameScene\EnemyAction</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowEnemyAction.cpp">
+      <Filter>ソース ファイル\GameScene\EnemyAction</Filter>
+    </ClCompile>
+    <ClCompile Include="AxeEnemyAction.cpp">
+      <Filter>ソース ファイル\GameScene\EnemyAction</Filter>
+    </ClCompile>
+    <ClCompile Include="DaggerEnemyAction.cpp">
+      <Filter>ソース ファイル\GameScene\EnemyAction</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClear.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AxeAction.cpp">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="PickUp.cpp">
+      <Filter>ソース ファイル\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial.cpp">
+      <Filter>ソース ファイル\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Explanation.cpp">
+      <Filter>ソース ファイル\Tutorial</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArrowAction.h">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="SordAction.h">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="UseCard.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="HandInCard.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MarchEnemy.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="StackCards.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="FlowTurn.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyContainer.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCard.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CardManager.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CardLocater.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CardContainer.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackEnemy.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameApp.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseAction.h">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseObject.h">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseTurn.h">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactFile.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseScene.h">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="CardSelect.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CardDataLoad.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="DaggerAction.h">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="InvincibleAction.h">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="RecoveryAction.h">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Stairs.h">
+      <Filter>ソース ファイル\GameScene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CardStrongBox.h">
+      <Filter>ソース ファイル\GameScene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>ソース ファイル\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseEnemyAction.h">
+      <Filter>ソース ファイル\GameScene\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SwordEnemyAction.h">
+      <Filter>ソース ファイル\GameScene\EnemyAction</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrowEnemyAction.h">
+      <Filter>ソース ファイル\GameScene\EnemyAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AxeEnemyAction.h">
+      <Filter>ソース ファイル\GameScene\EnemyAction</Filter>
+    </ClInclude>
+    <ClInclude Include="DaggerEnemyAction.h">
+      <Filter>ソース ファイル\GameScene\EnemyAction</Filter>
+    </ClInclude>
+    <ClInclude Include="AxeAction.h">
+      <Filter>ソース ファイル\GameScene\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockManager.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClear.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PickUp.h">
+      <Filter>ソース ファイル\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Tutorial.h">
+      <Filter>ソース ファイル\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Explanation.h">
+      <Filter>ソース ファイル\Tutorial</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Version.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
