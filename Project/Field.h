@@ -54,7 +54,7 @@ public:
 
 	Block* GetMouseOnBlock(Vector2 mousePos);
 	Block* GetPlayerOnBlock() { return  &_playerOnBlock; }
-	CRectangle GetTutorialStairsOnBlockRect() { return _blockArray[2][1].GetRect(); }
+	CRectangle GetTutorialStairsOnBlockRect() { return _blockArray[0][1].GetRect(); }
 	CRectangle GetTutorialEnemyBlockRect() { return _blockArray[2][2].GetRect(); }
 
 private:

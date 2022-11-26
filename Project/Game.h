@@ -7,6 +7,7 @@
 #include	"FlowTurn.h"
 #include	"ContactFile.h"
 #include	"Tutorial.h"
+#include	"FadeIn.h"
 
 class Game:public IBaseScene
 {
@@ -16,6 +17,9 @@ class Game:public IBaseScene
 	FlowTurn _flowTurn;
 	ContactFile _contactFile;
 	Tutorial _tutorial;
+	FadeIn _fadeIn;
+
+	int _time = 50;
 
 public:
 	void ReSet();

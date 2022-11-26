@@ -22,6 +22,8 @@ void Game::Initialize() {
 	_contactFile.SetStage();
 
 	_tutorial.Initialize();
+	_fadeIn.SetFadeInTime(_time);
+	_fadeIn.ReSet();
 }
 
 void Game::SetStatuTutorial() {
@@ -35,17 +37,17 @@ void Game::ReSet() {
 	_flowTurn.ReSet();
 	_cardManager.ReSet();
 	_tutorial.ReSet();
+	_fadeIn.ReSet();
 }
-int time = 0;
+
 void Game::Update() {
 
-	time++;
-	if (time > 10) {
-		SetStatuTutorial();
-		time = -5000;
+	if (!_fadeIn.IsEnd()) {
+		_fadeIn.Update();
+		if (_fadeIn.IsEnd()) SetStatuTutorial();
 	}
+	else _input.Update();
 
-	_input.Update();
 	if (_tutorial.IsEnd())_field.Update();
 	_cardManager.Update();
 	_flowTurn.Update();
@@ -60,6 +62,7 @@ void Game::Render(){
 	_cardManager.Render();
 
 	if (!_tutorial.IsEnd()) _tutorial.Render();
+	if (!_fadeIn.IsEnd())_fadeIn.Render();
 }
 
 void Game::Release(){

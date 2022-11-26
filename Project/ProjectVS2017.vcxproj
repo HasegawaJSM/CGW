@@ -116,6 +116,7 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyContainer.cpp" />
     <ClCompile Include="Explanation.cpp" />
+    <ClCompile Include="FadeIn.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="FlowTurn.cpp" />
     <ClCompile Include="Game.cpp" />
@@ -166,6 +167,7 @@
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemyContainer.h" />
     <ClInclude Include="Explanation.h" />
+    <ClInclude Include="FadeIn.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="FlowTurn.h" />
     <ClInclude Include="Game.h" />
