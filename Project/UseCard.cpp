@@ -1,7 +1,12 @@
 #include "UseCard.h"
-
+#include "SceneManager.h"
+#include "EndGameProcess.h"
 
 void UseCard::Update() {
+	if (_handInCard->GetHeldCardValue() <= 0) {
+		GameOver();
+		return;
+	}
 	UpdateUI();
 }
 
@@ -112,4 +117,9 @@ bool UseCard::EndTurn() {
 	if (!_useCard) return false;
 	_useCard = false;
 	return true;
+}
+
+void UseCard::GameOver() {
+	dynamic_cast<EndGameProcess*>(SceneManager::Instance().GetScene(SceneType::EndGame))->SetProcess(ProcessType::GameOver);
+	SceneManager::Instance().ChangeScene(SceneType::EndGame);
 }

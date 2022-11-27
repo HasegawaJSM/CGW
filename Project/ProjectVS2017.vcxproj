@@ -113,6 +113,7 @@
     <ClCompile Include="DaggerAction.cpp" />
     <ClCompile Include="DaggerEnemyAction.cpp" />
     <ClCompile Include="DrawCard.cpp" />
+    <ClCompile Include="EndGameProcess.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyContainer.cpp" />
     <ClCompile Include="Explanation.cpp" />
@@ -122,12 +123,14 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameApp.cpp" />
     <ClCompile Include="GameClear.cpp" />
+    <ClCompile Include="GameOver.cpp" />
     <ClCompile Include="HandInCard.cpp" />
     <ClCompile Include="IBaseAction.cpp" />
     <ClCompile Include="IBaseEnemyAction.cpp" />
     <ClCompile Include="IBaseObject.cpp" />
     <ClCompile Include="IBaseScene.cpp" />
     <ClCompile Include="IBaseTurn.cpp" />
+    <ClCompile Include="IEndGameProcess.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="InvincibleAction.cpp" />
     <ClCompile Include="Map.cpp" />
@@ -164,6 +167,7 @@
     <ClInclude Include="DaggerAction.h" />
     <ClInclude Include="DaggerEnemyAction.h" />
     <ClInclude Include="DrawCard.h" />
+    <ClInclude Include="EndGameProcess.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemyContainer.h" />
     <ClInclude Include="Explanation.h" />
@@ -173,12 +177,14 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameApp.h" />
     <ClInclude Include="GameClear.h" />
+    <ClInclude Include="GameOver.h" />
     <ClInclude Include="HandInCard.h" />
     <ClInclude Include="IBaseAction.h" />
     <ClInclude Include="IBaseEnemyAction.h" />
     <ClInclude Include="IBaseObject.h" />
     <ClInclude Include="IBaseScene.h" />
     <ClInclude Include="IBaseTurn.h" />
+    <ClInclude Include="IEndGameProcess.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="InvincibleAction.h" />
     <ClInclude Include="Map.h" />

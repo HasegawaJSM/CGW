@@ -2,7 +2,7 @@
 #include	"Mof.h"
 #include	"IEndGameProcess.h"
 
-class GameClear :public IEndGameProcess
+class GameOver :public IEndGameProcess
 {
 	CTexture _gameClearTexture;
 public:
@@ -14,4 +14,3 @@ public:
 private:
 	void LoadTexture();
 };
-

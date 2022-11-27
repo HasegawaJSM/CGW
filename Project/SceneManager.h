@@ -2,11 +2,11 @@
 #include	"map"
 #include	"IBaseScene.h"
 
-enum class SCENE_TYPE {
-	TITLE,
-	MAP,
-	INGAME,
-	GAMECLEAR,
+enum class SceneType {
+	Title,
+	Map,
+	InGame,
+	EndGame,
 };
 
 class SceneManager
@@ -14,7 +14,7 @@ class SceneManager
 	static SceneManager* _instance;
 
 	IBaseScene* _currentScene;
-	std::map<SCENE_TYPE, IBaseScene*> _sceneArray;
+	std::map<SceneType, IBaseScene*> _sceneArray;
 
 public:
 
@@ -29,8 +29,8 @@ public:
 		return *_instance;
 	}
 
-	void ChangeScene(SCENE_TYPE nextScene) { _currentScene = _sceneArray[nextScene]; }
-	IBaseScene* GetScene(SCENE_TYPE sceneType) { return _sceneArray[sceneType]; }
+	void ChangeScene(SceneType nextScene) { _currentScene = _sceneArray[nextScene]; }
+	IBaseScene* GetScene(SceneType sceneType) { return _sceneArray[sceneType]; }
 
 private:
 	void SetSceneArray();

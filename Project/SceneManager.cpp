@@ -3,17 +3,17 @@
 #include "Title.h"
 #include "Map.h"
 #include "Game.h"
-#include "GameClear.h"
+#include "EndGameProcess.h"
 
 SceneManager* SceneManager::_instance = nullptr;
 
 void SceneManager::Initialize() {
 	SetSceneArray();
 
-	dynamic_cast<Game*> (_sceneArray[SCENE_TYPE::INGAME])->GetContactFile()->SetMap(dynamic_cast<Map*>(_sceneArray[SCENE_TYPE::MAP]));
+	dynamic_cast<Game*> (_sceneArray[SceneType::InGame])->GetContactFile()->SetMap(dynamic_cast<Map*>(_sceneArray[SceneType::Map]));
 	for (auto itr = _sceneArray.begin();itr != _sceneArray.end();itr++) itr->second->Initialize();
 
-	_currentScene = _sceneArray[SCENE_TYPE::TITLE];
+	_currentScene = _sceneArray[SceneType::Title];
 }
 
 void SceneManager::ReSet() {
@@ -22,10 +22,10 @@ void SceneManager::ReSet() {
 
 void SceneManager::SetSceneArray() {
 
-	_sceneArray[SCENE_TYPE::TITLE] = new Title();
-	_sceneArray[SCENE_TYPE::MAP] = new Map();
-	_sceneArray[SCENE_TYPE::INGAME] = new Game();
-	_sceneArray[SCENE_TYPE::GAMECLEAR] = new GameClear();
+	_sceneArray[SceneType::Title] = new Title();
+	_sceneArray[SceneType::Map] = new Map();
+	_sceneArray[SceneType::InGame] = new Game();
+	_sceneArray[SceneType::EndGame] = new EndGameProcess();
 }
 
 void SceneManager::Update() {

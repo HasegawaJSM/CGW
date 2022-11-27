@@ -31,4 +31,6 @@ private:
 	void UpdateUI();
 	void ShineAttackableBlock(Card*);
 	void ChangeCurrentAttackable(ACTION_TYPE nextType);
+
+	void GameOver();
 };

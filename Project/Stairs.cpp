@@ -12,7 +12,7 @@ void Stairs::SetPos(Vector2 pos) {
 }
 
 void Stairs::Action() {
-	dynamic_cast<Game*>(SceneManager::Instance().GetScene(SCENE_TYPE::INGAME))->NextStage();
+	dynamic_cast<Game*>(SceneManager::Instance().GetScene(SceneType::InGame))->NextStage();
 }
 
 void Stairs::Render() {

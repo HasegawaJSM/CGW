@@ -1,7 +1,6 @@
 #include "ContactFile.h"
 #include "SceneManager.h"
 
-//
 void ContactFile::Initialize() {
 	_enemyContainer.Initialize();
 }
@@ -42,13 +41,13 @@ void ContactFile::SetNextStage() {
 	_crrentStageNumber++;
 	if (_crrentStageNumber >= stageValue) {
 		_crrentStageNumber = 0;
-		SceneManager::Instance().ChangeScene(SCENE_TYPE::GAMECLEAR);
+		SceneManager::Instance().ChangeScene(SceneType::InGame);
 		return;
 	}
 	_map->SetNextStageNumber(_crrentStageNumber);
 	SetStage();
 	
-	SceneManager::Instance().ChangeScene(SCENE_TYPE::MAP);
+	SceneManager::Instance().ChangeScene(SceneType::Map);
 }
 
 void ContactFile::SetStage() {

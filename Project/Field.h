@@ -22,10 +22,6 @@ class Field
 	CTexture _strongBoxTexture;
 	CTexture _stairsTexture;
 
-	CTexture _gameOverTexture;
-	bool _gameOver = false;
-	int _gameOverCount,_gameOverTime;
-
 public:
 	void Initialize();
 	void SetCardManager(CardManager* cardManager) { _cardManager = cardManager; }
@@ -58,5 +54,7 @@ public:
 	CRectangle GetTutorialEnemyBlockRect() { return _blockArray[2][2].GetRect(); }
 
 private:
+	void LoadTexture();
 	void SetAdjoinBlock();
+	void GameOver();
 };

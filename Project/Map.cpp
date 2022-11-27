@@ -29,7 +29,7 @@ void Map::Update() {
 	_count--;
 	if (_count <= 0) {
 		_count = _time;
-		SceneManager::Instance().ChangeScene(SCENE_TYPE::INGAME);
+		SceneManager::Instance().ChangeScene(SceneType::InGame);
 	}
 }
 

@@ -28,6 +28,7 @@ public:
 	void Release();
 
 	CRectangle GetRenderCardsRect();
+	int GetHeldCardValue() { return _cardValue; }
 
 private:
 	void DeleteCard();

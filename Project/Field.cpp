@@ -1,19 +1,20 @@
 #include "Field.h"
 #include "SceneManager.h"
+#include "EndGameProcess.h"
 
 void Field::Initialize() {
-
 	_endMarch  = false;
 
-	_blockTexture.Load("Block.png");
-	_strongBoxTexture.Load("StrongBox.png");
-	_stairsTexture.Load("stairs.png");
-	_gameOverTexture.Load("GameOver.png");
+	LoadTexture();
 
 	_playerOnBlock.SetPlayer(&_player);
 	_player.Initialize();
+}
 
-	_gameOverTime = _gameOverCount = 200;
+void Field::LoadTexture() {
+	_blockTexture.Load("Block.png");
+	_strongBoxTexture.Load("StrongBox.png");
+	_stairsTexture.Load("stairs.png");
 }
 
 void Field::CreateField(int blockValueX, int blockValueY) {
@@ -102,16 +103,6 @@ void Field::Update() {
 		}
 	}
 	_playerOnBlock.Update();
-
-	if (_gameOver) {
-		_gameOverCount--;
-		if (_gameOverCount > 0) return;
-
-		_gameOverCount = _gameOverTime;
-		_gameOver = false;
-		SceneManager::Instance().ReSet();
-		SceneManager::Instance().ChangeScene(SCENE_TYPE::TITLE);
-	}
 }
 
 void Field::MarchEnemy() {
@@ -162,9 +153,14 @@ bool Field::IsEndAttackEnemy() {
 		}
 
 	_player.FlowTurn();
-	if (_player.IsDead()) _gameOver = true;
+	if (_player.IsDead()) GameOver();
 
 	return true;
+}
+
+void Field::GameOver() {
+	dynamic_cast<EndGameProcess*>(SceneManager::Instance().GetScene(SceneType::EndGame))->SetProcess(ProcessType::GameOver);
+	SceneManager::Instance().ChangeScene(SceneType::EndGame);
 }
 
 void Field::ActionFieldOnObject(Vector2 mousePos) {
@@ -235,9 +231,6 @@ void Field::Render() {
 
 	_playerOnBlock.Render();
 	_player.Render();
-
-
-	if (_gameOver) _gameOverTexture.Render(g_pGraphics->GetTargetWidth() / 2 - _gameOverTexture.GetWidth() / 2, g_pGraphics->GetTargetHeight() / 2 - _gameOverTexture.GetHeight() / 2);
 }
 
 void Field::DeleteBlockArray() {
@@ -268,7 +261,6 @@ void Field::Release() {
 	_blockTexture.Release();
 	_strongBoxTexture.Release();
 	_stairsTexture.Release();
-	_gameOverTexture.Release();
 
 	_player.Release();
 }

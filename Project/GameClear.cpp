@@ -1,17 +1,11 @@
 #include "GameClear.h"
-#include "SceneManager.h"
 
 void GameClear::Initialize() {
-	_clearCount = _maxClearTime = 200;
+	LoadTexture();
 }
 
-void GameClear::Update() {
-	_clearCount--;
-	if (_clearCount > 0) return;
+void GameClear::LoadTexture() {
 
-	_clearCount = _maxClearTime;
-	SceneManager::Instance().ReSet();
-	SceneManager::Instance().ChangeScene(SCENE_TYPE::TITLE);
 }
 
 void GameClear::Render() {

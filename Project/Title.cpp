@@ -5,7 +5,7 @@ void Title::Initialize() {
 }
 
 void Title::Update() {
-	if (g_pInput->IsMouseKeyPush(MOFMOUSE_LBUTTON)) SceneManager::Instance().ChangeScene(SCENE_TYPE::MAP);
+	if (g_pInput->IsMouseKeyPush(MOFMOUSE_LBUTTON)) SceneManager::Instance().ChangeScene(SceneType::Map);
 }
 
 void Title::Render() {

@@ -33,7 +33,7 @@ bool StackCards::EndTurn() {
 }
 
 void StackCards::AddHandInCard() {
-	if (_handInCard->IsMaxHeldCard() || _stackCards.size() <= 0) return;
+	if (_handInCard->IsMaxHeldCard()|| (_stackCards.size() <= 0)) return;
 
 	_random.SetSeed(_seedCount);
 	int cardNumber = _random.Random(_stackCards.size());
