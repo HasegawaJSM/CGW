@@ -10,6 +10,7 @@ class Player
 	int _maxInvincibleValue,_invincibleCount;
 public:
 	void Initialize();
+	void ReSet();
 	void SetScale(float scale) { _scale = scale; }
 	void SetPosition(Vector2 pos);
 	void OnDamege(int damage);

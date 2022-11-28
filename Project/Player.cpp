@@ -7,6 +7,10 @@ void Player::Initialize(){
 	_playerTexture.Load("Player.png");
 }
 
+void Player::ReSet() {
+	_hp = _maxHp;
+}
+
 void Player::SetPosition(Vector2 pos) {
 	_playerPos.x = pos.x - _playerTexture.GetWidth() * _scale / 2;
 	_playerPos.y = pos.y - _playerTexture.GetHeight() * _scale;

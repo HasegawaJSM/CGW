@@ -17,6 +17,10 @@ void Field::LoadTexture() {
 	_stairsTexture.Load("stairs.png");
 }
 
+void Field::ReSet() {
+	_player.ReSet();
+}
+
 void Field::CreateField(int blockValueX, int blockValueY) {
 
 	DeleteBlockArray();
@@ -53,11 +57,6 @@ void Field::SetAdjoinBlock() {
 			if (y > 0)_blockArray[x][y].SetAdjoinBlock(&_blockArray[x][y - 1], ADJOIN_PLACE::BACK);
 		}
 	}
-}
-
-void Field::Load() {
-
-
 }
 
 void Field::SetEnemy(char** enemyData, int enemyTextureValue, Enemy** enemyTypeArray) {

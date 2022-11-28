@@ -38,6 +38,7 @@ void Game::ReSet() {
 	_cardManager.ReSet();
 	_tutorial.ReSet();
 	_fadeIn.ReSet();
+	_field.ReSet();
 }
 
 void Game::Update() {

@@ -25,7 +25,7 @@ class Field
 public:
 	void Initialize();
 	void SetCardManager(CardManager* cardManager) { _cardManager = cardManager; }
-	void Load();
+	void ReSet();
 
 	void CreateField(int blockValueX,int blockValueY);
 	void SetEnemy(char** enemyData,int enemyTextureValue, Enemy** enemyTypeArray);
