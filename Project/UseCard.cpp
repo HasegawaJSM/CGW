@@ -98,7 +98,7 @@ void UseCard::ActionCard() {
 
 bool UseCard::IsAuditAction() {
 	if (_cardManager->IsSelectCard()) return false;
-
+	
 	if (_pickCard->GetActionType() == ACTION_TYPE::PlayerCorrespondence) {
 		_pickBlock = _field->GetMouseOnBlock(_mousePos);
 		if (_pickBlock == nullptr) return false;

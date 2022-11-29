@@ -6,8 +6,10 @@ class ArrowAction :public IBaseAction
 	ACTION_TYPE _cardType = ACTION_TYPE::AllCorrespondence;
 public:
 	void Action(Block* block) {
-		block->GetEnemy()->OnDamage(1);
-		CheckDeadEnemy(block);
+		if (block->GetEnemy() != nullptr) {
+			block->GetEnemy()->OnDamage(1);
+			CheckDeadEnemy(block);
+		}
 	}
 	void ShineUpBlock(Block* block) {
 		ShineUp(block);

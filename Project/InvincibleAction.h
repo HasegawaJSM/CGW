@@ -5,7 +5,11 @@ class InvincibleAction :public IBaseAction
 {
 	ACTION_TYPE _cardType = ACTION_TYPE::PlayerCorrespondence;
 public:
-	void Action(Block* block) { block->GetPlayer()->OnInvincible(); }
+	void Action(Block* block) {
+		if (block->GetPlayer() != nullptr) {
+			block->GetPlayer()->OnInvincible();
+		}
+	}
 	void ShineUpBlock(Block* block) {
 		ShineUp(block);
 	}

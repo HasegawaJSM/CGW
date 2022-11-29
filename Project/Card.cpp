@@ -35,7 +35,6 @@ void Card::SetOnMouseFlg(bool flg) {
 }
 
 void Card::Action(Block* block) {
-	if (block == nullptr || (!block->IsHeldEnemy() && block->GetPlayer() == nullptr)) return;
 	_action->Action(block);
 }
 

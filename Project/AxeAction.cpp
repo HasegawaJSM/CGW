@@ -1,8 +1,9 @@
 #include "AxeAction.h"
 
 void AxeAction::Action(Block* block) {
-	block->GetEnemy()->OnDamage(1);
-	CheckDeadEnemy(block);
+	if (block->GetEnemy() != nullptr) {
+		Attack(block);
+	}
 
 	SideBlockAttack(block, ADJOIN_PLACE::LEFT);
 	SideBlockAttack(block, ADJOIN_PLACE::RIGHT);

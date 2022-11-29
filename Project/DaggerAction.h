@@ -13,6 +13,8 @@ public:
 
 private:
 	void CheckDeadEnemy(Block* _enemyUnderBlock) {
-		if (_enemyUnderBlock->GetEnemy()->IsDead()) _enemyUnderBlock->DeleteEnemy();
+		if (_enemyUnderBlock->GetEnemy() != nullptr) {
+			if (_enemyUnderBlock->GetEnemy()->IsDead()) _enemyUnderBlock->DeleteEnemy();
+		}
 	}
 };

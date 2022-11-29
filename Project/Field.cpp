@@ -31,10 +31,8 @@ void Field::CreateField(int blockValueX, int blockValueY) {
 	_blockArray = new Block * [_blockValueX];
 	for (int i = 0;i < _blockValueX;i++) _blockArray[i] = new Block[_blockValueY];
 
-
 	for (int y = 0;y < _blockValueY;y++) {
 		for (int x = 0;x < _blockValueX;x++) {
-
 			_blockArray[x][y].SetTexture(&_blockTexture);
 			_blockArray[x][y].SetStatu(x, y);
 			_blockArray[x][y].Initialize();
