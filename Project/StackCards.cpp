@@ -66,6 +66,8 @@ bool StackCards::DoneLook(Vector2 mousePos) {
 }
 
 void StackCards::Render() {
+
+	_cancelButton.RenderScale(_cancelButtonPos.x, _cancelButtonPos.y, _scale);
 	if (_stackCards.size() <= 0)return;
 	
 	float cardSizeX = _stackCards[0]->GetTexture()->GetWidth() + 20;
@@ -75,8 +77,6 @@ void StackCards::Render() {
 		CGraphicsUtilities::RenderString(g_pGraphics->GetTargetWidth() / 2 + ((float)count - ((float)_lookStackCard.size() / 2)) * cardSizeX, g_pGraphics->GetTargetHeight() / 2 - 20,MOF_COLOR_HBLACK, "~ %d", itr->second);
 		count++;
 	}
-
-	_cancelButton.RenderScale(_cancelButtonPos.x,_cancelButtonPos.y, _scale);
 }
 
 void StackCards::Release() {
